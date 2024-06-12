@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tarea_controles_basicos/Layouts/HomeScreen.dart';
 
 import 'Layouts/ExerciseOnePage.dart';
 import 'Layouts/ExerciseTwoPage.dart';
@@ -54,7 +55,7 @@ class MainMenu extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ExerciseOnePage()),
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
                 );
               },
               child: Text('Exercise 1: Customer Balance Calculation'),
