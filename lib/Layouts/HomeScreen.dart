@@ -12,6 +12,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Banco Bandido de Peluche'),
+        backgroundColor: Colors.blue,
+          centerTitle: true,
+          titleTextStyle: const TextStyle(
+            fontFamily: 'CustomFont',
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -51,6 +58,10 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('Calcular'),
+               style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white, 
+                  backgroundColor: Colors.blue,
+                ),
             ),
           ],
         ),
